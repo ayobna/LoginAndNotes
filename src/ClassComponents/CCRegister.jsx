@@ -66,11 +66,7 @@ class CCRegister extends Component {
         }
 
     }
-    login=()=>{
-        this.props.history.push({
-            pathname:'/'
-        }) 
-    }
+
     render() {
         console.log(this.props.message)
         return (
@@ -82,7 +78,6 @@ class CCRegister extends Component {
                 {this.state.message}<br />
                 <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
                 <Button variant="contained" onClick={this.btnregister}>register</Button><br />
-                <Button variant="contained" onClick={this.login}>login</Button><br />
                </ButtonGroup>
             </div>
         )
